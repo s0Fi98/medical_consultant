@@ -15,32 +15,32 @@ export default function Header() {
 
   const navItems = [
     { label: 'Home', href: '/' },
-    { label: 'About Us', href: '/about' },
+    { label: 'About Us', href: '/about_us' },
     {
       label: 'MBBS Admission',
       dropdown: [
-        { label: 'NEET UG Counselling', href: '/neet-ug' },
-        { label: 'NEET PG Counselling', href: '/neet-pg' },
-        { label: 'Admissions in India', href: '/admissions-india' },
-        { label: 'Study Abroad', href: '/study-abroad' },
+        { label: 'NEET UG Counselling', href: '/mbbs_admission/neet_ug' },
+        { label: 'NEET PG Counselling', href: '/mbbs_admission/neet_pg' },
+        { label: 'Admissions in India', href: '/mbbs_admission/admissions_india' },
+        { label: 'Study Abroad', href: '/mbbs_admission/study_abroad' },
       ],
     },
     {
       label: 'Gallery',
       dropdown: [
-        { label: 'Our Team', href: '/gallery/team' },
-        { label: 'Our Students', href: '/gallery/students' },
+        { label: 'Our Team', href: '/gallery/our_team' },
+        { label: 'Our Students', href: '/gallery/our_students' },
       ],
     },
     { label: 'Blogs', href: '/blogs' },
     {
       label: 'NEET Predictor',
       dropdown: [
-        { label: 'NEET UG College', href: '/predictor/ug' },
-        { label: 'Predictor Tool', href: '/predictor/tool' },
+        { label: 'NEET UG College Predictor', href: '/neet_predictor/ug_college' },
+        { label: 'Predictor Tool', href: '/neet_predictor/tool' },
       ],
     },
-    { label: 'Contact Us', href: '/contact' },
+    { label: 'Contact Us', href: '/contact_us' },
   ]
 
   return (
@@ -138,7 +138,7 @@ export default function Header() {
           {/* CTA + Mobile toggle */}
           <div className="flex items-center gap-3">
             <Link
-              href="/contact"
+              href="/contact_us"
               className="hidden md:inline-flex items-center gap-2 bg-gradient-to-r from-[#0a3d62] to-[#1a6fa8] hover:from-[#0c4a77] hover:to-[#1e7fc0] text-white text-sm font-semibold px-5 py-2.5 rounded-xl shadow-md hover:shadow-lg transition-all duration-200"
             >
               Free Consultation
@@ -203,7 +203,7 @@ export default function Header() {
             ))}
             <div className="pt-3 pb-1">
               <Link
-                href="/contact"
+                href="/contact_us"
                 className="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-[#0a3d62] to-[#1a6fa8] text-white text-sm font-semibold px-5 py-3 rounded-xl shadow-md"
                 onClick={() => setMobileOpen(false)}
               >

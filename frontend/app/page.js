@@ -1,11 +1,12 @@
 import Image from "next/image";
+import HeroSection from "@/components/herosection";
+import Testimonials from "@/components/testimonials";
 
 export default function Home() {
   return (
-    <div className="">
-      <main className="">
-        
-      </main>
-    </div>
+    <main className="">
+      <HeroSection />
+      <Testimonials />
+    </main>
   );
 }
