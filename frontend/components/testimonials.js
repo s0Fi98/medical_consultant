@@ -13,7 +13,7 @@ const testimonials = [
     rank: 'AIR 312',
     state: 'Delhi',
     rating: 5,
-    text: 'MedConsult made the entire NEET UG counselling process feel effortless. I was overwhelmed with the options, but their team sat with me personally and mapped out the best colleges for my rank. Got into AIIMS Delhi — my dream! Forever grateful.',
+    text: 'EduMed Abroad Services made the entire NEET UG counselling process feel effortless. I was overwhelmed with the options, but their team sat with me personally and mapped out the best colleges for my rank. Got into AIIMS Delhi — my dream! Forever grateful.',
     avatar: 'PS',
     color: 'from-[#0a3d62] to-[#1a6fa8]',
     category: 'NEET UG',
@@ -27,7 +27,7 @@ const testimonials = [
     rank: 'AIR 1,840',
     state: 'Maharashtra',
     rating: 5,
-    text: 'I was confused between state quota and All India quota. The counsellors at MedConsult explained everything in detail with real data. Their college predictor tool was spot-on! Secured Maulana Azad which I never thought was possible.',
+    text: 'I was confused between state quota and All India quota. The counsellors at EduMed Abroad Services explained everything in detail with real data. Their college predictor tool was spot-on! Secured Maulana Azad which I never thought was possible.',
     avatar: 'RM',
     color: 'from-[#1a6fa8] to-[#0891b2]',
     category: 'NEET UG',
@@ -41,7 +41,7 @@ const testimonials = [
     rank: 'AIR 520',
     state: 'Gujarat',
     rating: 5,
-    text: 'NEET PG counselling is incredibly complex and stressful. MedConsult guided me through every round — from choice filling to seat upgradation. Their knowledge of the system is unmatched. Now doing MD Radiology at JIPMER!',
+    text: 'NEET PG counselling is incredibly complex and stressful. EduMed Abroad Services guided me through every round — from choice filling to seat upgradation. Their knowledge of the system is unmatched. Now doing MD Radiology at JIPMER!',
     avatar: 'SP',
     color: 'from-[#0a3d62] to-[#48cae4]',
     category: 'NEET PG',
@@ -55,7 +55,7 @@ const testimonials = [
     rank: 'NEET Qualified',
     state: 'Kerala',
     rating: 5,
-    text: 'I wanted to study abroad but had no idea where to start. MedConsult handled everything — from university selection in Georgia to visa documentation and pre-departure briefing. Best decision of my life!',
+    text: 'I wanted to study abroad but had no idea where to start. EduMed Abroad Services handled everything — from university selection in Georgia to visa documentation and pre-departure briefing. Best decision of my life!',
     avatar: 'AN',
     color: 'from-[#0891b2] to-[#0a3d62]',
     category: 'Study Abroad',
@@ -69,7 +69,7 @@ const testimonials = [
     rank: 'AIR 4,210',
     state: 'Telangana',
     rating: 5,
-    text: 'The team helped me understand the state counselling process for Telangana completely. I had a mid-range rank and thought I wouldn\'t get a government seat. MedConsult\'s strategy got me into Osmania. Truly life-changing advice!',
+    text: 'The team helped me understand the state counselling process for Telangana completely. I had a mid-range rank and thought I wouldn\'t get a government seat. EduMed Abroad Services\'s strategy got me into Osmania. Truly life-changing advice!',
     avatar: 'KR',
     color: 'from-[#1a6fa8] to-[#0a3d62]',
     category: 'NEET UG',
@@ -83,7 +83,7 @@ const testimonials = [
     rank: 'AIR 7,500',
     state: 'Rajasthan',
     rating: 4,
-    text: 'I was stuck between private colleges and didn\'t know which one had the best infrastructure. MedConsult gave me an honest, unbiased comparison. No pressure, just genuine guidance. Ended up at Sri Ramachandra and loving it!',
+    text: 'I was stuck between private colleges and didn\'t know which one had the best infrastructure. EduMed Abroad Services gave me an honest, unbiased comparison. No pressure, just genuine guidance. Ended up at Sri Ramachandra and loving it!',
     avatar: 'VS',
     color: 'from-[#48cae4] to-[#1a6fa8]',
     category: 'NEET UG',
@@ -97,7 +97,7 @@ const testimonials = [
     rank: 'AIR 290',
     state: 'Uttar Pradesh',
     rating: 5,
-    text: 'For NEET PG, timing and strategy matter everything. MedConsult\'s team monitored every counselling round in real time and advised me exactly when to upgrade. Got MS Orthopaedics at KGMU — couldn\'t be happier!',
+    text: 'For NEET PG, timing and strategy matter everything. EduMed Abroad Services\'s team monitored every counselling round in real time and advised me exactly when to upgrade. Got MS Orthopaedics at KGMU — couldn\'t be happier!',
     avatar: 'AK',
     color: 'from-[#0a3d62] to-[#1a6fa8]',
     category: 'NEET PG',
@@ -111,7 +111,7 @@ const testimonials = [
     rank: 'NEET Qualified',
     state: 'Punjab',
     rating: 5,
-    text: 'Studying MBBS in China was a dream. MedConsult made it real — they guided me on NMC-approved universities, helped with application, and even connected me with seniors studying there. Full end-to-end support!',
+    text: 'Studying MBBS in China was a dream. EduMed Abroad Services made it real — they guided me on NMC-approved universities, helped with application, and even connected me with seniors studying there. Full end-to-end support!',
     avatar: 'DA',
     color: 'from-[#0a3d62] to-[#0891b2]',
     category: 'Study Abroad',
@@ -125,7 +125,7 @@ const testimonials = [
     rank: 'AIR 2,100',
     state: 'Tamil Nadu',
     rating: 5,
-    text: 'Tamil Nadu counselling is extremely state-specific and complex. MedConsult had a dedicated expert for TN quota who guided me step by step. I got into MMC — one of the oldest and best medical colleges in Asia!',
+    text: 'Tamil Nadu counselling is extremely state-specific and complex. EduMed Abroad Services had a dedicated expert for TN quota who guided me step by step. I got into MMC — one of the oldest and best medical colleges in Asia!',
     avatar: 'MI',
     color: 'from-[#1a6fa8] to-[#48cae4]',
     category: 'NEET UG',
@@ -208,11 +208,11 @@ export default function Testimonials() {
           <div className="absolute top-1/2 left-1/2 w-[700px] h-[700px] border border-white/20 rounded-full -translate-x-1/2 -translate-y-1/2" />
         </div>
         <div className="relative max-w-7xl mx-auto px-6 py-16 w-full">
-          <div className="flex items-center gap-2 text-xs text-[#48cae4]/80 mb-4">
+          {/* <div className="flex items-center gap-2 text-xs text-[#48cae4]/80 mb-4">
             <Link href="/" className="hover:text-[#48cae4] transition-colors">Home</Link>
             <span>/</span>
             <span className="text-white">Testimonials</span>
-          </div>
+          </div> */}
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div>
               <h1 className="text-5xl md:text-6xl font-black text-white tracking-tight leading-none" style={{ fontFamily: "'Merriweather', Georgia, serif" }}>
@@ -220,15 +220,15 @@ export default function Testimonials() {
                 <span className="block text-[#48cae4]">STORIES</span>
               </h1>
               <p className="text-slate-300 text-sm mt-3 max-w-lg">
-                Real students. Real colleges. Real results. See how MedConsult has transformed medical careers across India and abroad.
+                Real students. Real colleges. Real results. See how EduMed Abroad Services has transformed medical careers across India and abroad.
               </p>
             </div>
             {/* Stats */}
             <div className="flex gap-6">
               {[
-                { value: '90K+', label: 'Students' },
+                { value: '50+', label: 'Students' },
                 { value: '4.9★', label: 'Rating' },
-                { value: '20+', label: 'Years' },
+                { value: '1+', label: 'Years' },
               ].map(({ value, label }) => (
                 <div key={label} className="text-center">
                   <p className="text-white font-black text-2xl leading-none">{value}</p>
@@ -406,7 +406,7 @@ export default function Testimonials() {
             Ready to Write Your Own Success Story?
           </h2>
           <p className="text-slate-400 text-sm leading-relaxed max-w-xl mx-auto">
-            Join 90,000+ students who trusted MedConsult to navigate their NEET journey. Let our experts guide you to your dream medical college.
+            Join 90,000+ students who trusted EduMed Abroad Services to navigate their NEET journey. Let our experts guide you to your dream medical college.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
             <Link
@@ -433,7 +433,7 @@ export default function Testimonials() {
 
       {/* WhatsApp floating button */}
       <a
-        href="https://wa.me/919876543210"
+        href="https://wa.me/916900035233"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full shadow-[0_4px_20px_rgba(34,197,94,0.5)] flex items-center justify-center transition-all duration-200 hover:scale-110"

@@ -22,7 +22,7 @@ export default function Footer() {
             <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
           </svg>
           <p className="text-xs text-slate-300 leading-relaxed">
-            <span className="text-[#48cae4] font-semibold">Disclaimer:</span> MedConsult is an independent educational consultancy. We are not affiliated with NMC, MCI, or any government body. All information provided is for guidance purposes only. Please verify all details with the respective institutions before making admission decisions.
+            <span className="text-[#48cae4] font-semibold">Disclaimer:</span> EduMed Abroad Services is an independent educational consultancy. We are not affiliated with NMC, MCI, or any government body. All information provided is for guidance purposes only. Please verify all details with the respective institutions before making admission decisions.
           </p>
         </div>
       </div>
@@ -40,7 +40,7 @@ export default function Footer() {
             </div>
             <div>
               <div className="text-white font-bold text-lg tracking-tight" style={{ fontFamily: "'Merriweather', Georgia, serif" }}>
-                MedConsult
+                EduMed
               </div>
               <div className="text-[#48cae4] text-[10px] tracking-widest uppercase font-semibold -mt-0.5">
                 Your Career, Our Mission
@@ -123,15 +123,15 @@ export default function Footer() {
             {[
               {
                 icon: 'M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z M15 11a3 3 0 11-6 0 3 3 0 016 0z',
-                text: '123, Medical Hub, MG Road\nBengaluru, Karnataka – 560001',
+                text: 'Station Road, Ward No. 9, Dhubri, Assam – 783301',
               },
               {
                 icon: 'M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z',
-                text: '+91 98765 43210\n+91 91234 56789',
+                text: '+91 69000 35233\n+91 60036 83021',
               },
               {
                 icon: 'M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z',
-                text: 'info@medconsultant.in\nsupport@medconsultant.in',
+                text: 'edumedabroad97@gmail.com\nsupport.edumed@gmail.com',
               },
             ].map(({ icon, text }, i) => (
               <div key={i} className="flex items-start gap-3">
@@ -166,7 +166,7 @@ export default function Footer() {
       {/* ── Bottom Bar ── */}
       <div className="bg-[#04141f]">
         <div className="max-w-7xl mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-slate-500">
-          <span>© {new Date().getFullYear()} MedConsult. All Rights Reserved.</span>
+          <span>© {new Date().getFullYear()} EduMed Abroad Services. All Rights Reserved.</span>
           <span className="flex items-center gap-1">
             Made with <span className="text-red-500 text-base leading-none">❤️</span> by{' '}
             <span className="text-[#48cae4] font-semibold ml-0.5">Insight Innova</span>

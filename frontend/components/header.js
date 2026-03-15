@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false)
@@ -16,22 +17,26 @@ export default function Header() {
   const navItems = [
     { label: 'Home', href: '/' },
     { label: 'About Us', href: '/about_us' },
+    // {
+    //   label: 'MBBS Admission',
+    //   dropdown: [
+    //     { label: 'NEET UG Counselling', href: '/mbbs_admission/neet_ug' },
+    //     { label: 'NEET PG Counselling', href: '/mbbs_admission/neet_pg' },
+    //     { label: 'Admissions in India', href: '/mbbs_admission/admissions_india' },
+    //     { label: 'Study Abroad', href: '/mbbs_admission/study_abroad' },
+    //   ],
+    // },
     {
-      label: 'MBBS Admission',
+      label: 'Countries',
       dropdown: [
-        { label: 'NEET UG Counselling', href: '/mbbs_admission/neet_ug' },
-        { label: 'NEET PG Counselling', href: '/mbbs_admission/neet_pg' },
-        { label: 'Admissions in India', href: '/mbbs_admission/admissions_india' },
-        { label: 'Study Abroad', href: '/mbbs_admission/study_abroad' },
+        { label: 'Russia', href: '/countries/russia' },
+        { label: 'Uzbekistan', href: '/countries/uzbekistan' },
+        { label: 'Kyrgyzstan', href: '/countries/kyrgyzstan' },
+        { label: 'Georgia', href: '/countries/georgia' },
+        { label: 'Bangladesh', href: '/countries/bangladesh' },
       ],
     },
-    {
-      label: 'Gallery',
-      dropdown: [
-        { label: 'Our Team', href: '/gallery/our_team' },
-        { label: 'Our Students', href: '/gallery/our_students' },
-      ],
-    },
+    { label: 'Gallery', href: '/gallery' },
     { label: 'Blogs', href: '/blogs' },
     {
       label: 'NEET Predictor',
@@ -52,14 +57,14 @@ export default function Header() {
             <svg className="w-3.5 h-3.5 text-[#48cae4]" fill="currentColor" viewBox="0 0 20 20">
               <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
             </svg>
-            +91 98765 43210
+            +91 69000 35233
           </span>
           <span className="flex items-center gap-1.5">
             <svg className="w-3.5 h-3.5 text-[#48cae4]" fill="currentColor" viewBox="0 0 20 20">
               <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
               <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
             </svg>
-            info@medconsultant.in
+            edumedabroad97@gmail.com
           </span>
         </div>
         <span className="text-[#90e0ef]">Mon – Sat: 9:00 AM – 6:00 PM</span>
@@ -67,25 +72,27 @@ export default function Header() {
 
       {/* Main header */}
       <header
-        className={`sticky top-0 z-50 transition-all duration-300 ${
-          scrolled
-            ? 'bg-white shadow-[0_4px_24px_rgba(10,61,98,0.12)]'
-            : 'bg-white border-b border-slate-100'
-        }`}
+        className={`sticky top-0 z-50 transition-all duration-300 ${scrolled
+          ? 'bg-white shadow-[0_4px_24px_rgba(10,61,98,0.12)]'
+          : 'bg-white border-b border-slate-100'
+          }`}
       >
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3 group flex-shrink-0">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#0a3d62] to-[#1a6fa8] flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
+            {/* <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#0a3d62] to-[#1a6fa8] flex items-center justify-center shadow-md group-hover:shadow-lg transition-shadow">
               <svg className="w-6 h-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
               </svg>
+            </div> */}
+            <div className=''>
+              <Image src="/EduMed_Logo.png" alt="Logo" width={62} height={62} />
             </div>
             <div className="leading-tight">
-              <div className="text-[#0a3d62] font-bold text-lg tracking-tight" style={{ fontFamily: "'Merriweather', Georgia, serif" }}>
-                MedConsult
+              <div className="text-[#0a3d62] font-bold text-md tracking-tight" style={{ fontFamily: "'Merriweather', Georgia, serif" }}>
+                EduMed Abroad Services
               </div>
-              <div className="text-[#1a6fa8] text-[10px] tracking-widest uppercase font-semibold -mt-0.5">
+              <div className="text-[#1a6fa8] text-[9px] tracking-widest uppercase font-semibold -mt-0.5">
                 Your Career, Our Mission
               </div>
             </div>
@@ -162,9 +169,8 @@ export default function Header() {
 
         {/* Mobile menu */}
         <div
-          className={`lg:hidden overflow-hidden transition-all duration-300 border-t border-slate-100 bg-white ${
-            mobileOpen ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0'
-          }`}
+          className={`lg:hidden overflow-hidden transition-all duration-300 border-t border-slate-100 bg-white ${mobileOpen ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0'
+            }`}
         >
           <div className="px-4 py-4 space-y-1 max-h-[70vh] overflow-y-auto">
             {navItems.map((item) => (

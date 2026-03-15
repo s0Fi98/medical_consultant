@@ -110,11 +110,11 @@ export default function Blogs() {
           <div className="absolute top-1/2 left-1/2 w-[600px] h-[600px] border border-white/20 rounded-full -translate-x-1/2 -translate-y-1/2" />
         </div>
         <div className="relative max-w-7xl mx-auto px-6 py-14 w-full">
-          <div className="flex items-center gap-2 text-xs text-[#48cae4]/80 mb-4">
+          {/* <div className="flex items-center gap-2 text-xs text-[#48cae4]/80 mb-4">
             <Link href="/" className="hover:text-[#48cae4] transition-colors">Home</Link>
             <span>/</span>
             <span className="text-white">Blogs</span>
-          </div>
+          </div> */}
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
             <div>
               <h1 className="text-5xl md:text-6xl font-black text-white tracking-tight leading-none" style={{ fontFamily: "'Merriweather', Georgia, serif" }}>
@@ -276,7 +276,7 @@ export default function Blogs() {
 
       {/* WhatsApp floating button */}
       <a
-        href="https://wa.me/919876543210"
+        href="https://wa.me/916900035233"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full shadow-[0_4px_20px_rgba(34,197,94,0.5)] flex items-center justify-center transition-all duration-200 hover:scale-110"

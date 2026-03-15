@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 // Animated counter hook
 function useCounter(target, duration = 2000, start = false) {
@@ -63,20 +64,20 @@ export default function AboutUs() {
         </div>
         <div className="relative max-w-7xl mx-auto px-6 py-16 w-full flex flex-col md:flex-row items-center justify-between gap-10">
           <div className="space-y-4 flex-1">
-            <div className="flex items-center gap-2 text-xs text-[#48cae4]/80">
+            {/* <div className="flex items-center gap-2 text-xs text-[#48cae4]/80">
               <Link href="/" className="hover:text-[#48cae4] transition-colors">Home</Link>
               <span>/</span>
               <span className="text-white">About Us</span>
-            </div>
+            </div> */}
             <h1 className="text-5xl md:text-6xl font-black text-white tracking-tight leading-none" style={{ fontFamily: "'Merriweather', Georgia, serif" }}>
               ABOUT
               <span className="block text-[#48cae4]">US</span>
             </h1>
             <p className="text-slate-300 text-base max-w-md leading-relaxed">
-              India's most trusted MBBS admission consultancy — guiding aspiring doctors since 2003.
+              India's one of the trusted MBBS admission consultancy — guiding aspiring doctors since 2025.
             </p>
             <div className="flex flex-wrap gap-3 pt-1">
-              {['Since 2003', 'NMC Approved', '90,000+ Students'].map(tag => (
+              {['Since 2025', 'NMC Approved', '50+ Students'].map(tag => (
                 <span key={tag} className="flex items-center gap-1.5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 text-white text-xs font-medium">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#48cae4]" />{tag}
                 </span>
@@ -94,7 +95,7 @@ export default function AboutUs() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
                   </svg>
                 </div>
-                <p className="text-white font-bold text-lg text-center" style={{ fontFamily: "'Merriweather', Georgia, serif" }}>MedConsult India</p>
+                <p className="text-white font-bold text-lg text-center" style={{ fontFamily: "'Merriweather', Georgia, serif" }}>EduMed Abroad Services</p>
                 <p className="text-[#48cae4] text-xs text-center">Medical Education Consultants</p>
               </div>
             </div>
@@ -110,13 +111,15 @@ export default function AboutUs() {
             <span className="text-[#1a6fa8] text-xs font-semibold uppercase tracking-wider">Who We Are</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-black text-[#0a3d62] leading-tight" style={{ fontFamily: "'Merriweather', Georgia, serif" }}>
-            MedConsult – Medical Education Consultants
+            EduMed Abroad Services – Medical Education Consultants
           </h2>
           <p className="text-slate-500 text-base leading-relaxed">
-            If you're serious about getting into medical school, you need the best NEET Counselling. And that's exactly what we offer at MedConsult. We have a team of young specialists dedicated to helping you with every aspect of the process, from the initial application to the final paperwork and admission procedures.
+            {/* If you're serious about getting into medical school, you need the best NEET Counselling. And that's exactly what we offer at MedConsult. We have a team of young specialists dedicated to helping you with every aspect of the process, from the initial application to the final paperwork and admission procedures. */}
+            At EduMed Abroad, we are dedicated to helping aspiring medical students achieve their dream of becoming successful doctors through globally recognized MBBS programs. With increasing competition and limited medical seats in India, studying MBBS abroad has become a practical and affordable solution for many students
           </p>
           <p className="text-slate-500 text-base leading-relaxed">
-            Whether you're looking to study in India or anywhere else in the world, we can help you get into the medical school of your dreams. Our cutting-edge offerings are tailored to meet the needs of NEET aspirants at both the undergraduate and postgraduate levels.
+            {/* Whether you're looking to study in India or anywhere else in the world, we can help you get into the medical school of your dreams. Our cutting-edge offerings are tailored to meet the needs of NEET aspirants at both the undergraduate and postgraduate levels. */}
+            We provide complete admission guidance for top medical universities that are compliant with NMC guidelines and recognized by international medical bodies such as WHO. Our goal is to ensure students receive high-quality education, modern infrastructure, and strong clinical exposure in a safe & supportive environment.
           </p>
           <div className="flex flex-wrap gap-3 pt-2">
             {[
@@ -137,7 +140,7 @@ export default function AboutUs() {
         {/* Right image placeholder */}
         <div className="relative">
           <div className="w-full h-96 bg-gradient-to-br from-[#e8f4fd] to-[#dbeafe] rounded-3xl overflow-hidden border border-[#1a6fa8]/10 flex items-center justify-center">
-            <div className="text-center space-y-3 p-8">
+            {/* <div className="text-center space-y-3 p-8">
               <div className="w-24 h-24 rounded-3xl bg-gradient-to-br from-[#0a3d62] to-[#1a6fa8] flex items-center justify-center mx-auto shadow-xl">
                 <svg className="w-12 h-12 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
@@ -145,7 +148,8 @@ export default function AboutUs() {
               </div>
               <p className="text-[#0a3d62] font-bold text-lg" style={{ fontFamily: "'Merriweather', Georgia, serif" }}>Your Dream Doctor Career</p>
               <p className="text-slate-500 text-sm">Replace with your team photo</p>
-            </div>
+            </div> */}
+            <Image src="/EduMed Abroad students.png" alt="Doctor" width={600} height={600} className="rounded-3xl mx-auto shadow-xl" />
           </div>
           {/* Floating badge */}
           <div className="absolute -bottom-5 -left-5 bg-white rounded-2xl shadow-xl border border-slate-100 px-5 py-3 flex items-center gap-3">
@@ -155,7 +159,7 @@ export default function AboutUs() {
               </svg>
             </div>
             <div>
-              <p className="text-[#0a3d62] font-black text-xl leading-none">20+</p>
+              <p className="text-[#0a3d62] font-black text-xl leading-none">1+</p>
               <p className="text-slate-500 text-xs font-medium">Years of Experience</p>
             </div>
           </div>
@@ -173,11 +177,11 @@ export default function AboutUs() {
             </div>
             <div>
               <p className="text-white font-bold text-lg">If You Have Any Query, Feel Free To Call Us On</p>
-              <p className="text-[#48cae4] font-black text-2xl tracking-wide">+91 98765 43210</p>
+              <p className="text-[#48cae4] font-black text-2xl tracking-wide">+91 69000 35233</p>
             </div>
           </div>
           <a
-            href="tel:+919876543210"
+            href="tel:+916900035233"
             className="flex-shrink-0 border-2 border-white text-white hover:bg-white hover:text-[#0a3d62] font-semibold px-8 py-3 rounded-xl transition-all duration-200 text-sm flex items-center gap-2"
           >
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -194,7 +198,7 @@ export default function AboutUs() {
           <div className="text-center mb-12 space-y-2">
             <p className="text-[#48cae4] text-xs font-bold uppercase tracking-widest">What Drives Us</p>
             <h2 className="text-3xl font-black text-[#0a3d62]" style={{ fontFamily: "'Merriweather', Georgia, serif" }}>
-              MedConsult's Vision & Mission
+              EduMed's Vision & Mission
             </h2>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
@@ -202,7 +206,7 @@ export default function AboutUs() {
               {
                 title: 'Our Mission',
                 icon: 'M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z',
-                text: 'Our mission is to be a one-stop solution for all medical aspirants to guide them throughout their NEET journey so they can get MBBS admissions to the college of their choice. We assure all deserving Medical Aspirants to secure their seats with our counselling assistance and expertise since 2003 in medical counselling for Indian students.',
+                text: 'Our mission is to be a one-stop solution for all medical aspirants to guide them throughout their NEET journey so they can get MBBS admissions to the college of their choice. We assure all deserving Medical Aspirants to secure their seats with our counselling assistance and expertise since 2025 in medical counselling for Indian students.',
                 color: 'from-[#0a3d62] to-[#1a6fa8]',
                 bg: 'bg-[#eff8ff]',
                 accent: 'text-[#1a6fa8]',
@@ -242,19 +246,19 @@ export default function AboutUs() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
             <StatCard
               icon="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0H3"
-              value={90000} suffix="+" label="Students Assisted" started={statsStarted}
+              value={50} suffix="+" label="Students Assisted" started={statsStarted}
             />
             <StatCard
               icon="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"
-              value={18500} suffix="+" label="Counselling One to One" started={statsStarted}
+              value={50} suffix="+" label="Counselling One to One" started={statsStarted}
             />
             <StatCard
               icon="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"
-              value={4100} suffix="+" label="MBBS Admissions" started={statsStarted}
+              value={50} suffix="+" label="MBBS Admissions" started={statsStarted}
             />
             <StatCard
               icon="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"
-              value={550} suffix="+" label="MD & MS Admissions" started={statsStarted}
+              value={50} suffix="+" label="MD & MS Admissions" started={statsStarted}
             />
           </div>
         </div>
@@ -329,7 +333,7 @@ export default function AboutUs() {
                   </div>
                   <div>
                     <p className="text-white group-hover:text-[#0a3d62] text-xs font-semibold uppercase tracking-wider transition-colors">Call Us Now</p>
-                    <p className="text-[#48cae4] group-hover:text-[#1a6fa8] font-black text-lg transition-colors">+91 98765 43210</p>
+                    <p className="text-[#48cae4] group-hover:text-[#1a6fa8] font-black text-lg transition-colors">+91 69000 35233</p>
                   </div>
                   <svg className="w-4 h-4 text-white/40 group-hover:text-[#1a6fa8] ml-auto group-hover:translate-x-1 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                     <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -337,7 +341,7 @@ export default function AboutUs() {
                 </a>
 
                 <a
-                  href="https://wa.me/919876543210"
+                  href="https://wa.me/916900035233"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group flex items-center gap-4 bg-white/10 hover:bg-green-500 border border-white/20 hover:border-transparent rounded-2xl px-6 py-4 transition-all duration-300 hover:shadow-xl"
@@ -376,7 +380,7 @@ export default function AboutUs() {
 
       {/* WhatsApp floating button */}
       <a
-        href="https://wa.me/919876543210"
+        href="https://wa.me/916900035233"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full shadow-[0_4px_20px_rgba(34,197,94,0.5)] flex items-center justify-center transition-all duration-200 hover:scale-110"

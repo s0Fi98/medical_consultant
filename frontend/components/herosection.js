@@ -11,7 +11,7 @@ const slides = [
     cta: { label: 'Start Free Consultation', href: '/contact_us' },
     secondary: { label: 'Explore Colleges', href: '/mbbs_admission/neet_ug' },
     accent: '#48cae4',
-    stat: { value: '90,000+', label: 'Students Guided' },
+    stat: { value: '50+', label: 'Students Guided' },
   },
   {
     tag: 'MBBS Admissions India',
@@ -20,16 +20,16 @@ const slides = [
     cta: { label: 'Check My College', href: '/neet_predictor/ug_college' },
     secondary: { label: 'Admissions in India', href: '/mbbs_admission/admissions_india' },
     accent: '#90e0ef',
-    stat: { value: '4,100+', label: 'MBBS Admissions' },
+    stat: { value: '30+', label: 'MBBS Admissions' },
   },
   {
     tag: 'Study Abroad',
     headline: ['MBBS Abroad', 'NMC Approved', 'Universities'],
-    sub: 'Russia, Georgia, Philippines, China — we guide you from university selection to visa to landing in your dream country.',
+    sub: 'Russia, Georgia and counting — we guide you from university selection to visa to landing in your dream country.',
     cta: { label: 'Explore Study Abroad', href: '/mbbs_admission/study_abroad' },
     secondary: { label: 'Contact Us', href: '/contact_us' },
     accent: '#48cae4',
-    stat: { value: '20+', label: 'Countries Covered' },
+    stat: { value: '5+', label: 'Countries Covered' },
   },
 ]
 
@@ -277,10 +277,10 @@ export default function HeroSection() {
                 {/* Services grid */}
                 <div className="grid grid-cols-2 gap-3 mb-5">
                   {[
-                    { label: 'NEET UG', icon: '🎓', count: '60K+ guided' },
-                    { label: 'NEET PG', icon: '🏥', count: '18K+ sessions' },
-                    { label: 'India Admissions', icon: '🇮🇳', count: '4100+ seats' },
-                    { label: 'Study Abroad', icon: '✈️', count: '20+ countries' },
+                    { label: 'NEET UG', icon: '🎓', count: '50+ guided' },
+                    { label: 'NEET PG', icon: '🏥', count: '100+ sessions' },
+                    { label: 'India Admissions', icon: '🇮🇳', count: '10+ seats' },
+                    { label: 'Study Abroad', icon: '✈️', count: '5+ countries' },
                   ].map(({ label, icon, count }) => (
                     <div key={label} className="bg-white/8 hover:bg-white/15 border border-white/10 hover:border-[#48cae4]/30 rounded-xl p-3.5 cursor-pointer transition-all duration-200 group">
                       <span className="text-xl">{icon}</span>
@@ -303,7 +303,7 @@ export default function HeroSection() {
                     </div>
                     <div>
                       <p className="text-white text-xs font-bold">Call for Free Advice</p>
-                      <p className="text-[#48cae4] text-xs font-black">+91 98765 43210</p>
+                      <p className="text-[#48cae4] text-xs font-black">+91 69000 35233</p>
                     </div>
                   </div>
                   <svg className="w-4 h-4 text-white/40 group-hover:text-[#48cae4] group-hover:translate-x-1 transition-all" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -372,9 +372,9 @@ export default function HeroSection() {
       <div className="relative z-10 bg-white/5 backdrop-blur-sm border-t border-white/10">
         <div className="max-w-7xl mx-auto px-6 py-4 flex flex-wrap items-center justify-center md:justify-between gap-4">
           {[
-            { icon: '🏆', text: 'Since 2003 — 20+ Years of Excellence' },
+            { icon: '🏆', text: 'Since 2015 — 1+ Years of Excellence' },
             { icon: '✅', text: 'NMC & ISO Certified Consultancy' },
-            { icon: '📍', text: 'Pan India + 20 Countries Abroad' },
+            { icon: '📍', text: 'Pan India + 5 Countries Abroad' },
             { icon: '🎯', text: '98% Admission Success Rate' },
           ].map(({ icon, text }) => (
             <div key={text} className="flex items-center gap-2 text-white/60 text-xs font-medium">
