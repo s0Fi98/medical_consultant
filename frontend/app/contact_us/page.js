@@ -3,22 +3,24 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 
-const InputField = ({ placeholder, type = 'text', className = '', id, value, onChange }) => (
+const InputField = ({ placeholder, type = 'text', className = '', id, name, value, onChange }) => (
   <input
     type={type}
     placeholder={placeholder}
     aria-label={placeholder}
     id={id}
+    name={name}
     value={value}
     onChange={onChange}
     className={`w-full bg-white border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-700 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#1a6fa8]/40 focus:border-[#1a6fa8] transition-all duration-200 ${className}`}
   />
 )
 
-const SelectField = ({ placeholder, options, id, value, onChange }) => (
+const SelectField = ({ placeholder, options, id, name, value, onChange }) => (
   <select
     aria-label={placeholder}
     id={id}
+    name={name}
     value={value}
     onChange={onChange}
     className="w-full bg-white border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#1a6fa8]/40 focus:border-[#1a6fa8] transition-all duration-200 appearance-none cursor-pointer"
@@ -31,7 +33,8 @@ const SelectField = ({ placeholder, options, id, value, onChange }) => (
 export default function ContactUs() {
 
   const URL = process.env.NEXT_PUBLIC_GET_MAIL_URL
-  const API_KEY = process.env.NEXT_PUBLIC_MAIL_SENDER_API
+  const ACCESS_KEY = process.env.NEXT_PUBLIC_FORM_ACCESS_KEY
+  const ACCESS_KEY_2 = process.env.NEXT_PUBLIC_FORM_ACCESS_KEY_2
 
   const initialQueryData = {
     query_name: '',
@@ -64,12 +67,22 @@ export default function ContactUs() {
     setQueryData(prev => ({ ...prev, [id]: value }))
   }
 
-  const submitEnquiry = (event) => {
+  const submitEnquiry = async (event) => {
     event.preventDefault()
     console.log(queryData)
-    setQueryData(initialQueryData)
-    setSubmitted(true)
-    setTimeout(() => setSubmitted(false), 5000)
+    const payload = new FormData(event.target);
+    payload.append("access_key", ACCESS_KEY);
+    const response = await fetch(URL, {
+      method: "POST",
+      body: payload
+    });
+
+    const data = await response.json();
+    if (data.success) {
+      setQueryData(initialQueryData)
+      setSubmitted(true)
+      setTimeout(() => setSubmitted(false), 5000)
+    }
   }
 
   const handleChange = (e) => {
@@ -80,8 +93,8 @@ export default function ContactUs() {
   const handleSubmit = async (e) => {
     e.preventDefault()
     const payload = new FormData(e.target);
-    payload.append("access_key", "0623fa1d-1cca-41a8-8608-de2e2470a0a4");
-    const response = await fetch({ URL }, {
+    payload.append("access_key", ACCESS_KEY_2);
+    const response = await fetch(URL, {
       method: "POST",
       body: payload
     });
@@ -246,18 +259,19 @@ export default function ContactUs() {
           ) : (
             <form onSubmit={submitEnquiry} className="space-y-3">
               <div className="grid grid-cols-2 gap-3">
-                <InputField placeholder="Name *" id="query_name" value={queryData.query_name} onChange={handleQueryChange} />
-                <InputField placeholder="Phone *" type="tel" id="query_phone" value={queryData.query_phone} onChange={handleQueryChange} />
+                <InputField placeholder="Name *" id="query_name" name="query_name" value={queryData.query_name} onChange={handleQueryChange} />
+                <InputField placeholder="Phone *" type="tel" id="query_phone" name="query_phone" value={queryData.query_phone} onChange={handleQueryChange} />
               </div>
               <div className="grid grid-cols-2 gap-3">
-                <InputField placeholder="Email" type="email" id="query_email" value={queryData.query_email} onChange={handleQueryChange} />
-                <InputField placeholder="NEET Score" type="number" id="query_score" value={queryData.query_score} onChange={handleQueryChange} />
+                <InputField placeholder="Email" type="email" id="query_email" name="query_email" value={queryData.query_email} onChange={handleQueryChange} />
+                <InputField placeholder="NEET Score" type="number" id="query_score" name="query_score" value={queryData.query_score} onChange={handleQueryChange} />
               </div>
               <div className="grid grid-cols-2 gap-3">
                 <div className="relative">
                   <SelectField
                     placeholder="Course"
                     id="query_course"
+                    name="query_course"
                     value={queryData.query_course}
                     onChange={handleQueryChange}
                     options={['MBBS', 'BDS', 'BAMS', 'BHMS', 'MD', 'MS', 'MDS']}
@@ -270,6 +284,7 @@ export default function ContactUs() {
                   <SelectField
                     placeholder="Category"
                     id="query_category"
+                    name="query_category"
                     value={queryData.query_category}
                     onChange={handleQueryChange}
                     options={['General', 'OBC', 'SC', 'ST', 'EWS', 'PwD']}
@@ -279,11 +294,12 @@ export default function ContactUs() {
                   </svg>
                 </div>
               </div>
-              <InputField placeholder="City" id="query_city" value={queryData.query_city} onChange={handleQueryChange} />
+              <InputField placeholder="City" id="query_city" name="query_city" value={queryData.query_city} onChange={handleQueryChange} />
               <textarea
                 placeholder="Message (optional)"
                 rows={3}
                 id="query_message"
+                name="query_message"
                 value={queryData.query_message}
                 onChange={handleQueryChange}
                 className="w-full bg-white border border-slate-200 rounded-xl px-4 py-3 text-sm text-slate-700 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-[#48cae4]/40 focus:border-[#48cae4] transition-all duration-200 resize-none"
