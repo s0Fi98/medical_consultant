@@ -26,16 +26,16 @@ export default function Header() {
     //     { label: 'Study Abroad', href: '/mbbs_admission/study_abroad' },
     //   ],
     // },
-    {
-      label: 'Countries',
-      dropdown: [
-        { label: 'Russia', href: '/countries/russia' },
-        { label: 'Uzbekistan', href: '/countries/uzbekistan' },
-        { label: 'Kyrgyzstan', href: '/countries/kyrgyzstan' },
-        { label: 'Georgia', href: '/countries/georgia' },
-        { label: 'Bangladesh', href: '/countries/bangladesh' },
-      ],
-    },
+    // {
+    //   label: 'Countries',
+    //   dropdown: [
+    //     { label: 'Russia', href: '/countries/russia' },
+    //     { label: 'Uzbekistan', href: '/countries/uzbekistan' },
+    //     { label: 'Kyrgyzstan', href: '/countries/kyrgyzstan' },
+    //     { label: 'Georgia', href: '/countries/georgia' },
+    //     { label: 'Bangladesh', href: '/countries/bangladesh' },
+    //   ],
+    // },
     { label: 'Gallery', href: '/gallery' },
     { label: 'Blogs', href: '/blogs' },
     {
