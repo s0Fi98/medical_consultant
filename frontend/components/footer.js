@@ -169,7 +169,7 @@ export default function Footer() {
           <span>© {new Date().getFullYear()} EduMed Abroad Services. All Rights Reserved.</span>
           <span className="flex items-center gap-1">
             Made with <span className="text-red-500 text-base leading-none">❤️</span> by{' '}
-            <Link href="https://insightinnova.com" target="_blank" className="text-[#48cae4] font-semibold ml-0.5">Insight Innova</Link>
+            <Link href="https://portfolio-solman-sofi-hussain-pdam.vercel.app" target="_blank" className="text-[#48cae4] font-semibold ml-0.5">Insight Innova</Link>
           </span>
         </div>
       </div>
