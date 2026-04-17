@@ -15,7 +15,7 @@ const galleryCategories = [
     tagline: 'World-class medical education, hands-on from Day 1',
     images: [
       { src: '/class_view.jpeg', caption: 'Clinical Skills Lab' },
-      { src: '/class_sitting_structure.jpeg', caption: 'Welcome Ceremony at Campus' },
+      { src: '/Class_sitting_structure.jpeg', caption: 'Welcome Ceremony at Campus' },
       { src: '/classroom_view.jpeg', caption: 'Orientation & Oath Taking' },
     ],
   },
@@ -172,11 +172,10 @@ export default function StudentLifeGallery() {
             <button
               key={c.id}
               onClick={() => switchTab(c.id)}
-              className={`relative flex items-center gap-2.5 px-6 py-3 rounded-full text-sm font-bold border transition-all duration-300 ${
-                activeTab === c.id
-                  ? 'bg-gradient-to-r from-[#0a3d62] to-[#1a6fa8] text-white border-[#1a6fa8] shadow-lg shadow-[#1a6fa8]/30 scale-105'
-                  : 'bg-white/8 text-white/60 border-white/15 hover:bg-white/15 hover:text-white hover:scale-105'
-              }`}
+              className={`relative flex items-center gap-2.5 px-6 py-3 rounded-full text-sm font-bold border transition-all duration-300 ${activeTab === c.id
+                ? 'bg-gradient-to-r from-[#0a3d62] to-[#1a6fa8] text-white border-[#1a6fa8] shadow-lg shadow-[#1a6fa8]/30 scale-105'
+                : 'bg-white/8 text-white/60 border-white/15 hover:bg-white/15 hover:text-white hover:scale-105'
+                }`}
             >
               <span className="text-lg">{c.emoji}</span>
               {c.label}
@@ -261,11 +260,10 @@ export default function StudentLifeGallery() {
             <button
               key={c.id}
               onClick={() => switchTab(c.id)}
-              className={`relative group overflow-hidden rounded-2xl h-24 transition-all duration-300 hover:scale-105 ${
-                activeTab === c.id
-                  ? 'ring-2 ring-[#48cae4] ring-offset-2 ring-offset-[#071e2e]'
-                  : 'opacity-60 hover:opacity-100'
-              }`}
+              className={`relative group overflow-hidden rounded-2xl h-24 transition-all duration-300 hover:scale-105 ${activeTab === c.id
+                ? 'ring-2 ring-[#48cae4] ring-offset-2 ring-offset-[#071e2e]'
+                : 'opacity-60 hover:opacity-100'
+                }`}
             >
               <img
                 src={c.images[0].src}

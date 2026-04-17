@@ -24,6 +24,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <link rel="icon" href="/EduMed_Logo.png" />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
@@ -33,7 +34,7 @@ export default function RootLayout({ children }) {
             {children}
             {/* WhatsApp floating button */}
             <Link
-              href="https://wa.me/918527158440"
+              href="https://wa.me/6003683012"
               target="_blank"
               rel="noopener noreferrer"
               className="fixed bottom-22 right-6 z-50 w-10 h-10 bg-green-500 hover:bg-green-600 rounded-full shadow-[0_4px_20px_rgba(34,197,94,0.5)] flex items-center justify-center transition-all duration-200 hover:scale-110"
