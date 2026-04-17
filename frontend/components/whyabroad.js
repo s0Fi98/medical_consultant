@@ -229,19 +229,18 @@ export default function WhyChooseAndAbroad() {
           <div className="hidden md:flex justify-center items-center">
             <div className="relative">
               {/* Circle image — replace null with your doctor/advisor image path */}
-              <div className="w-80 h-80 rounded-full overflow-hidden border-8 border-[#e8f4fd] shadow-2xl bg-gradient-to-br from-[#0a3d62] to-[#1a6fa8] flex items-center justify-center">
-                {/* ← Replace with: <img src="/why-choose/advisor.png" className="w-full h-full object-cover" /> */}
+              {/* <div className="w-80 h-80 rounded-full overflow-hidden border-8 border-[#e8f4fd] shadow-2xl bg-gradient-to-br from-[#0a3d62] to-[#1a6fa8] flex items-center justify-center">
                 <div className="text-center space-y-2 px-8">
-                  {/* <div className="w-16 h-16 rounded-2xl bg-white/20 flex items-center justify-center mx-auto">
+                  <div className="w-16 h-16 rounded-2xl bg-white/20 flex items-center justify-center mx-auto">
                     <svg className="w-9 h-9 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
                     </svg>
-                  </div> */}
-                  {/* <p className="text-white font-bold text-sm" style={{ fontFamily: "'Merriweather', Georgia, serif" }}>Add Doctor Image</p>
-                  <p className="text-white/60 text-xs">Replace with<br />/why-choose/advisor.png</p> */}
-                  <Image src="/doctor_image.png" alt="Advisor" width={600} height={600} />
+                  </div>
+                  <p className="text-white font-bold text-sm" style={{ fontFamily: "'Merriweather', Georgia, serif" }}>Doctor Image Here</p>
+                  <p className="text-white/60 text-xs"><br /></p>
                 </div>
-              </div>
+              </div> */}
+              <Image src="/doctor_image.png" alt="Advisor" className="w-full h-full object-cover" width={250} height={250} />
 
               {/* Floating stat badges */}
               {[
