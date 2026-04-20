@@ -94,9 +94,9 @@ export default function Footer() {
             <FooterLink href="/about_us">About Us</FooterLink>
             <FooterLink href="/blogs">Blogs</FooterLink>
             <FooterLink href="/contact_us">Contact Us</FooterLink>
-            <FooterLink href="/privacy policy">Privacy Policy</FooterLink>
-            <FooterLink href="/terms">Terms & Conditions</FooterLink>
-            <FooterLink href="/refund-policy">Refund Policy</FooterLink>
+            <FooterLink href="/">Privacy Policy</FooterLink>
+            <FooterLink href="/">Terms & Conditions</FooterLink>
+            <FooterLink href="/">Refund Policy</FooterLink>
           </div>
         </div>
 
@@ -106,13 +106,13 @@ export default function Footer() {
             Our Services
           </h3>
           <div className="space-y-2.5">
-            <FooterLink href="/neet-ug">NEET UG Counselling</FooterLink>
-            <FooterLink href="/neet-pg">NEET PG Counselling</FooterLink>
-            <FooterLink href="/admissions-india">Admissions in India</FooterLink>
-            <FooterLink href="/study-abroad">Study Abroad (MBBS)</FooterLink>
-            <FooterLink href="/predictor/ug">NEET UG College Predictor</FooterLink>
-            <FooterLink href="/gallery/team">Our Team</FooterLink>
-            <FooterLink href="/gallery/students">Our Students</FooterLink>
+            <FooterLink href="/">NEET UG Counselling</FooterLink>
+            <FooterLink href="/">NEET PG Counselling</FooterLink>
+            <FooterLink href="/">Admissions in India</FooterLink>
+            <FooterLink href="/">Study Abroad (MBBS)</FooterLink>
+            <FooterLink href="/">NEET UG College Predictor</FooterLink>
+            <FooterLink href="/">Our Team</FooterLink>
+            <FooterLink href="/">Our Students</FooterLink>
           </div>
         </div>
 
