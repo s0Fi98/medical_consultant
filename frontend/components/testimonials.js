@@ -247,7 +247,7 @@ export default function Testimonials() {
           <MarqueeRow items={row2} reverse />
         </div>
         {/* Fade edges */}
-        <div className="pointer-events-none absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-slate-50 to-transparent z-10" style={{position:'relative', marginTop:'-100%', height:'100%'}} />
+        <div className="pointer-events-none absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-slate-50 to-transparent z-10" style={{ position: 'relative', marginTop: '-100%', height: '100%' }} />
       </section>
 
       {/* ── FEATURED CAROUSEL ── */}
@@ -266,11 +266,10 @@ export default function Testimonials() {
               <button
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
-                className={`px-5 py-2 rounded-full text-sm font-semibold border transition-all duration-200 ${
-                  activeCategory === cat
-                    ? 'bg-[#0a3d62] text-white border-[#0a3d62] shadow-md'
-                    : 'bg-white text-slate-500 border-slate-200 hover:border-[#1a6fa8]/40 hover:text-[#1a6fa8]'
-                }`}
+                className={`px-5 py-2 rounded-full text-sm font-semibold border transition-all duration-200 ${activeCategory === cat
+                  ? 'bg-[#0a3d62] text-white border-[#0a3d62] shadow-md'
+                  : 'bg-white text-slate-500 border-slate-200 hover:border-[#1a6fa8]/40 hover:text-[#1a6fa8]'
+                  }`}
               >
                 {cat}
               </button>
@@ -317,9 +316,8 @@ export default function Testimonials() {
                     <button
                       key={i}
                       onClick={() => { setActive(i); clearInterval(intervalRef.current) }}
-                      className={`rounded-full transition-all duration-300 ${
-                        i === active ? 'w-6 h-2.5 bg-[#0a3d62]' : 'w-2.5 h-2.5 bg-slate-200 hover:bg-[#1a6fa8]/40'
-                      }`}
+                      className={`rounded-full transition-all duration-300 ${i === active ? 'w-6 h-2.5 bg-[#0a3d62]' : 'w-2.5 h-2.5 bg-slate-200 hover:bg-[#1a6fa8]/40'
+                        }`}
                     />
                   ))}
                 </div>
@@ -419,7 +417,7 @@ export default function Testimonials() {
               </svg>
             </Link>
             <a
-              href="tel:+919876543210"
+              href="tel:+918527158440"
               className="flex items-center gap-2 border-2 border-white/30 hover:border-white text-white font-semibold px-8 py-4 rounded-2xl transition-all duration-200"
             >
               <svg className="w-4 h-4 text-[#48cae4]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

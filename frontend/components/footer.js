@@ -63,15 +63,17 @@ export default function Footer() {
           {/* Social icons */}
           <div className="flex items-center gap-3 pt-1">
             {[
-              { label: 'Facebook', icon: 'M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z' },
-              { label: 'Instagram', icon: 'M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zM17.5 6.5h.01M6.5 2h11A4.5 4.5 0 0122 6.5v11A4.5 4.5 0 0117.5 22h-11A4.5 4.5 0 012 17.5v-11A4.5 4.5 0 016.5 2z' },
-              { label: 'YouTube', icon: 'M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z' },
-              { label: 'LinkedIn', icon: 'M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z M4 6a2 2 0 100-4 2 2 0 000 4z' },
-            ].map(({ label, icon }) => (
+              { label: 'Facebook', icon: 'M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z', href: 'https://www.facebook.com/share/1F5ih27T9m/?mibextid=wwXIfr' },
+              { label: 'Instagram', icon: 'M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zM17.5 6.5h.01M6.5 2h11A4.5 4.5 0 0122 6.5v11A4.5 4.5 0 0117.5 22h-11A4.5 4.5 0 012 17.5v-11A4.5 4.5 0 016.5 2z', href: 'https://www.instagram.com/mbbs.with.edumed?igsh=MWp1OTc3Nmo2cnRlNQ%3D%3D&utm_source=qr' },
+              { label: 'YouTube', icon: 'M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 001.46 6.42 29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58zM9.75 15.02V8.98L15.5 12l-5.75 3.02z', href: 'https://www.youtube.com/@edumedabroadservices' },
+              { label: 'LinkedIn', icon: 'M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z M4 6a2 2 0 100-4 2 2 0 000 4z', href: 'https://www.linkedin.com/company/edumed-abroad-services/' },
+            ].map(({ label, icon, href }) => (
               <a
                 key={label}
-                href="#"
+                href={href}
                 aria-label={label}
+                target='_blank'
+                rel='noopener noreferrer'
                 className="w-8 h-8 rounded-lg bg-[#0a3d62] hover:bg-[#1a6fa8] flex items-center justify-center transition-colors duration-200"
               >
                 <svg className="w-4 h-4 text-slate-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
@@ -89,10 +91,10 @@ export default function Footer() {
           </h3>
           <div className="space-y-2.5">
             <FooterLink href="/">Home</FooterLink>
-            <FooterLink href="/about">About Us</FooterLink>
+            <FooterLink href="/about_us">About Us</FooterLink>
             <FooterLink href="/blogs">Blogs</FooterLink>
-            <FooterLink href="/contact">Contact Us</FooterLink>
-            <FooterLink href="/privacy-policy">Privacy Policy</FooterLink>
+            <FooterLink href="/contact_us">Contact Us</FooterLink>
+            <FooterLink href="/privacy policy">Privacy Policy</FooterLink>
             <FooterLink href="/terms">Terms & Conditions</FooterLink>
             <FooterLink href="/refund-policy">Refund Policy</FooterLink>
           </div>
@@ -131,7 +133,7 @@ export default function Footer() {
               },
               {
                 icon: 'M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z',
-                text: 'edumedabroad97@gmail.com\nsupport.edumed@gmail.com',
+                text: 'edumedabroad97@gmail.com\ngo4habib@gmail.com ',
               },
             ].map(({ icon, text }, i) => (
               <div key={i} className="flex items-start gap-3">

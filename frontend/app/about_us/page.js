@@ -177,7 +177,7 @@ export default function AboutUs() {
             </div>
             <div>
               <p className="text-white font-bold text-lg">If You Have Any Query, Feel Free To Call Us On</p>
-              <p className="text-[#48cae4] font-black text-2xl tracking-wide">+91 69000 35233</p>
+              <p className="text-[#48cae4] font-black text-2xl tracking-wide">+91 69000 35233 / +91 60036 83012</p>
             </div>
           </div>
           <a

@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 const slides = [
   {
-    tag: 'NEET UG Counselling 2025',
+    tag: 'NEET UG Counselling 2026-27',
     headline: ['Your Dream', 'Medical College', 'Starts Here'],
     sub: 'Expert NEET UG & PG counselling with a 98% success rate. Get into the college you deserve with personalised guidance.',
     cta: { label: 'Start Free Consultation', href: '/contact_us' },

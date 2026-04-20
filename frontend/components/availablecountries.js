@@ -208,7 +208,7 @@ export default function StudyAbroadCountries() {
             className="text-3xl md:text-4xl font-black text-[#0a3d62] leading-tight"
             style={{ fontFamily: "'Merriweather', Georgia, serif" }}
           >
-            Best MBBS Abroad Destinations for Indian Students (2025–26)
+            Best MBBS Abroad Destinations for Indian Students (2026–27)
           </h2>
           <p className="text-slate-500 text-sm leading-relaxed">
             Choosing the right MBBS abroad destination is crucial. At EduMed, we carefully select only the best medical universities that are <strong className="text-[#0a3d62]">100% NMC, WHO, and ECFMG compliant</strong> — ensuring your degree is globally recognised. From free counselling to visa processing and accommodation arrangements, we provide complete end-to-end support for students aspiring to study medicine overseas.
