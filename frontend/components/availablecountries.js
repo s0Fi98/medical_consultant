@@ -98,7 +98,7 @@ function CountryCard({ country }) {
 
   return (
     <Link
-      href={`/mbbs_admission/study_abroad/${country.slug}`}
+      href={`/countries/${country.slug}`}
       className="group block bg-white rounded-3xl border border-slate-100 hover:border-[#1a6fa8]/20 shadow-sm hover:shadow-2xl transition-all duration-300 overflow-hidden"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}

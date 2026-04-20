@@ -22,7 +22,7 @@ export default function Header() {
     //   dropdown: [
     //     { label: 'NEET UG Counselling', href: '/mbbs_admission/neet_ug' },
     //     { label: 'NEET PG Counselling', href: '/mbbs_admission/neet_pg' },
-    //     { label: 'Admissions in India', href: '/mbbs_admission/admissions_india' },
+    //     { label: 'Admissions in India', href: '/mbbs_admission/admissions_in_india' },
     //     { label: 'Study Abroad', href: '/mbbs_admission/study_abroad' },
     //   ],
     // },
